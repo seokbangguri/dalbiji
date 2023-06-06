@@ -1,0 +1,13 @@
+#pdf_viewer{ width:100%; height:100%;}
+#answer_table_div{height: 600px;}
+#answer_radio_desk{font-size:1.2rem;}
+#exam_table > thead > tr{    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+

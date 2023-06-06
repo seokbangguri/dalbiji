@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/GmarketSansTTFMedium.ttf') format('truetype')
+}
+body {
+	font-family: 'MyCustomFont', sans-serif;
+}
+.load {
+	display: block;
+	height: 100vh;
+	background-color: #9494949a;
+	z-index: 3;
+	position: absolute;
+}
+.loader {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 3;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -60px;
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #ABC8FF;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.page-title {
+	text-align: center;
+	font-family: 'MyCustomFont', sans-serif;
+}
+#current_date {
+	font-family: 'MyCustomFont', sans-serif;
+	text-align: center;
+}
+.date-btn {
+    height:120px;
+}
+.sidebar {
+	background-color: #334A76;
+}
+.sidebar-menu li a span {
+	font-size: 17px;
+}
+
+#date {
+	font-size: 25px;
+	margin-bottom: 0;
+	font-family: 'MyCustomFont', sans-serif;
+}
+#day {
+	font-size: 30px;
+	margin-bottom: 0;
+	font-family: 'MyCustomFont', sans-serif;
+}
+
+.date_content {
+	overflow-x: scroll;
+}
+
+.calendar-list {
+    background-color: white;
+    /* height: 100vh; */
+    height: 75%;
+    
+}
+
+.contact-list {
+	height: 400px;
+	overflow:scroll;
+}
+
+.plus-calendar{
+    background-color: white;
+    height: 50px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 1px #e9e3e3 solid;
+}
+
+.label-plus-calendar {
+    padding-top: 15px;
+    /* border-bottom: 1px; */
+}
+
+.calendar_insert {
+    margin-left: 40px;
+	padding: 0px;
+	float: right;
+	height: 100%;
+	margin-bottom: 0 !important;
+}
+.search_btn {
+	height: 44px;
+}

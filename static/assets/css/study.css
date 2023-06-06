@@ -1,0 +1,366 @@
+.hide { display:none!important; }
+
+.report_chart {
+    height:500px;
+}
+
+@media only screen and (max-width: 575.98px)
+#div_report_page {
+    display: none;
+}
+
+#table_list_length, #table_list_filter, #table_list_info {
+    display:none;
+}
+
+#make_plan  div.modal-dialog {
+    max-width: 90%;
+}
+
+#table_subject_list {
+    min-width: 490px;
+}
+
+.onofftoggle {
+    left: 50%;
+    top: 0px;
+    position: absolute;
+    width: 73px;
+    -webkit-user-select: none;
+}
+
+#make_plan label.label-top {
+    position: absolute;
+    left: 15px;
+    top: -6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'CircularStd', sans-serif;
+    font-size: .9375rem;
+}
+#make_plan label.label-top.bg-input {
+    background-color: #d5f5e3;
+}
+
+#make_plan input.plan-method {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    height: 29px;
+}
+
+#make_plan  .bg-input {
+    background-color: #D5F5E3;
+}
+#make_plan .subject_check {
+    width: 24%;
+    height: 32px;
+}
+
+#table_subject_list label {
+    display: inline;
+    position: relative;
+}
+#table_subject_list .w-input {
+    width: 8%;
+}
+#make_plan  .select2-selection {
+    background-color: #D5F5E3;
+}
+#make_plan  .code_plan_type {
+     margin-left: -17px;
+    margin-top: -20px;
+}
+#make_plan  .code_plan_type label {
+}
+#make_plan  .code_plan_type div.onofftoggle {
+    margin-top: 34px;
+    margin-left: -29px;
+}
+#div_make_plan_category span.select2.select2-container {
+    width:75%!important;
+}
+#div_make_plan_subject span.select2.select2-container {
+    width:75%!important;
+}
+
+
+#div_make_tab_content td {
+    padding-left:1px;
+    padding-right:1px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+#div_tab_content td, #div_tab_content th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 0px;
+}
+
+#div_tab_content td.td_plan_subject {
+    padding-left:20px;
+    width: 94px;
+}
+
+#div_make_tab_content td.td_plan_subject {
+    padding-left:20px;
+}
+#plan-subjects a {
+    font-size:15px;
+    padding: 1px;
+    border: 1px solid #eae7e7;
+    width: 112px;
+}
+
+#plan-subjects a.active {
+		border-bottom-width: 2px;
+		border-color: transparent;
+		border-bottom-color: #667eea;
+		background-color: #a5eaff;
+		transition: none 0s ease 0s; 
+		-moz-transition: none 0s ease 0s; 
+		-o-transition: none 0s ease 0s; 
+		-ms-transition: none 0s ease 0s; 
+		-webkit-transition: none 0s ease 0s;
+}
+
+#table_list th.vert, #table_list td.vert {
+    width:10px!important;
+}
+
+#table_list_wrapper th.vert.sorting_asc {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    width: 20px!important;
+}
+#table_list td.vert.sorting_1 {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    width: 20px!important;
+}
+
+#table_subject_list td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: .25rem!important;
+    padding-right: .25rem!important;
+}
+#table_subject_list td input {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#table_subject_list th.wd-50, #table_subject_list td.wd-50 {
+    width: 50px!important;
+}
+#table_subject_list th.wd-100, #table_subject_list td.wd-100 {
+    width: 50px!important;
+}
+#table_subject_list th.wd-book, #table_subject_list td.wd-book {
+    width: 150px!important;
+}
+
+#table_subject_list td.wd-100 input {
+    width: 70px!important;
+    height: 30px;
+}
+#table_subject_list td.wd-100 input.start {
+    width: 43px!important;
+    height: 30px;
+}
+#table_subject_list td.wd-100 input.end {
+    width: 46px!important;
+    height: 30px;
+}
+#table_subject_list td.wd-100 input.exclude {
+    width: 100px!important;
+    height: 30px;
+}
+#table_subject_list td.wd-100 input.plan_name {
+    width: 35px!important;
+    height: 30px;
+}
+#table_subject_list span {
+    font-size: 0.7rem;
+    width: 20px!important;
+}
+#table_subject_list td.wd-200 input {
+    width: 140px!important;
+    height: 30px;
+}
+
+#table_list th, #table_list td {
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+#tbody_member_list th, #tbody_member_list td {
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+#tbody_new_member_list th, #tbody_new_member_list td {
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+
+#table_list>thead .sorting:before, #table_list>thead .sorting:after, #table_list>thead .sorting_asc:before, #table_list>thead .sorting_asc:after, #table_list>thead .sorting_desc:before, #table_list>thead .sorting_desc:after, #table_list>thead .sorting_asc_disabled:before, #table_list>thead .sorting_asc_disabled:after, #table_list>thead .sorting_desc_disabled:before, #table_list>thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: .1em;
+    display: block;
+    opacity: .3;
+}
+
+#table_subject_list_wrapper {
+    overflow-x: scroll;
+}
+
+#btn_new_subject_member {
+    position: absolute;
+    top: 43px;
+    z-index: 1;
+}
+
+#table_list_srch_1 { /* 과목 */
+    width: 140px;
+}
+#table_list_srch_2 { /* 년도 */
+    width: 100px;
+}
+#table_list_srch_4 { /* 종류 */
+    width: 100px;
+}
+#table_list_srch_5 { /* 권 */
+    width: 100px;
+}
+#table_list_srch_6 { /* 시작p */
+    width: 100px;
+}
+#table_list_srch_7 { /* 끝p */
+    width: 100px;
+}
+#table_list_srch_9 { /* 총회원 */
+    width: 100px;
+}
+#table_list_srch_10 { /* 사용회원 */
+    width: 100px;
+}
+
+#code01_note, #code02_note, #code03_note {
+    font-size: 14px;
+    height : 30px;
+    padding-top:2px!important;
+    padding-bottom:2px!important;
+}
+
+a.exclude_member_subject {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#div_tab_content tbody.fix_scroll {
+    display: block;
+    height: 500px;
+    overflow: auto;
+}
+#div_tab_content thead.fix_scroll, #div_tab_content tbody.fix_scroll tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;/* even columns width , fix width of table too*/
+}
+
+.mp_selected {
+    background-color: #d5d3d3;
+    border: 2px solid green;
+}
+
+#frm_mp_plan_move input.sel_date {
+    box-sizing: border-box;
+    outline: 0;
+    padding: .75rem;
+    position: relative;
+    width: 100%;
+}
+
+#frm_mp_plan_move input[type="date"].sel_date::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+#table_subject_list .set_center {
+        width: 34px;
+}
+#table_subject_list .td_category_subject {
+    background-color: #e9ecef;
+}
+#table_subject_list .td_category_subject button {
+    font-size: 0.7rem;
+}
+#table_subject_list .td_category_subject div.cate_name {
+    width:100px;
+    display:inline;
+}
+#table_subject_list .td_category_subject div.subj_name {
+    width:150px;
+    display:inline;
+}
+#table_subject_list .td_category_subject div.count_name {
+    width:50px;
+    display:inline;
+}
+#table_subject_list .td_category_subject sup {
+    color: #9c9e9f;
+    font-style: italic;
+    margin-right: 3px;
+}
+#table_subject_list .td_subject sup.first {
+    margin-left:0px;
+}
+
+#frm_make_plan div.plan_option  div.card {
+    background-color: #f7f7f7;
+}
+
+#exam_table_wrapper > div:first-child { display: none; }
+
+#exam_table .exam-hide { display:none; }
+
+#div_exam_filter .form-control {
+   pointer-events: all;
+} 
+#exam_table_tbody table thead td {
+    color: #bbb7b7;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+#exam_table td.r_title {
+    font-size: 0.7rem;
+}
+#exam_table_tbody table td {
+    padding-left: 4px;
+    padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    line-height: 11px;
+}
+
+
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="description" content="학습현황">
+		<meta name="keywords" content="위지스,학습현황">
+        <meta name="author" content="wizice - wisdom service">
+        <meta name="robots" content="noindex, nofollow">
+        <title>달비지 홍덕진</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!-- Lineawesome CSS -->
+        <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+		
+		<!-- Select2 CSS -->
+		<link rel="stylesheet" href="assets/css/select2.min.css">
+		
+		<!-- Datetimepicker CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+		
+		<!-- Tagsinput CSS -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+		
+		<!-- 전체현황 CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="assets/css/map.css" />
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+		<!-- 전체현황 Wrapper -->
+        <div class="main-wrapper">
+			<div class="col load">
+				<div class="loader"></div>
+			</div>
+			
+		
+			<!-- Header -->
+            <div class="header">
+			
+				<!-- Logo -->
+                <div class="header-left">
+                    <a href="#" class="logo">
+						<img src="assets/img/logo.png" width="120" height="60" alt="">
+					</a>
+                </div>
+				<!-- /Logo -->
+				
+				<a id="toggle_btn" href="javascript:void(0);">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				
+				<!-- Header Title -->
+                <div class="page-title-box">
+					<h3>달비지</h3>
+                </div>
+				<!-- /Header Title -->
+				
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
+				
+            </div>
+			<div class="date-select">
+				<input type="date" class="current-date" min="" max="">
+			</div>
+			<!-- /Header -->
+			
+			<!-- Sidebar -->
+      <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+          <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+				<li>
+				  <a href="/main"
+					><i class="la la-cube"></i> <span>메인화면</span></a
+				  >
+				</li>
+				<li>
+				  <a href="/calendar"
+					><i class="la la-briefcase"></i> <span>달력</span></a
+				  >
+				</li>
+				<li class="active">
+				  <a href="/map"
+					><i class="la la-file-pdf-o"></i> <span>지도</span></a
+				  >
+				</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+			<!-- /Sidebar -->
+			
+			<!-- Page Wrapper -->
+            <div class="page-wrapper">
+                <div id="map_wrap" class="map_wrap3" style="z-index: 0;">
+                    <div id="map_div" style="position: fixed;"></div>
+                </div>
+				<div id="myposition"><img id="gps" src="assets/img/gps.png" alt=""></div>
+                <div class="row" id="content">
+					<div class="col short">
+						<div class="col-6">
+							<ul class="schedule">
+							</ul>
+						</div>
+						<div class="col-6">
+							<div class="col-12 right">
+								<div class="row  align-items-center res">
+									<div class="col">예상 시간</div>
+								</div>
+								<div class="row  align-items-center res">
+									<div class="col"><h2 class="time"></h2></div>
+								</div>
+								<div class="row  align-items-center res">
+									<div class="col">총 거리</div>
+								</div>
+								<div class="row  align-items-center res">
+									<div class="col"><h2 class="distance"></h2></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col long">
+						<div class="col down-btn"><i class="arrow down"></i></div>
+						<div></div>
+					</div>
+                </div>
+            </div>
+			<!-- /Page Wrapper -->
+
+        </div>
+		<!-- /전체현황 Wrapper -->
+
+		<!-- jQuery -->
+        <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+		<!-- Bootstrap Core JS -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- Slimscroll JS -->
+		<script src="assets/js/jquery.slimscroll.min.js"></script>
+		
+		<!-- Select2 JS -->
+		<script src="assets/js/select2.min.js"></script>
+		
+		<!-- Datetimepicker JS -->
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+		
+		<!-- Tagsinput JS -->
+		<script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="assets/js/app.js"></script>
+
+        <!--TMap API-->
+	    <script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appKey=l7xx3456096962854ec98aa6c8218aca5c5b"></script>
+	    <script src="js/start.js"></script>
+	    <script src="js/load_tmap.js"></script>
+	    <script src="js/tMap.js"></script>
+
+		<!--Scroll JS-->
+		<script>
+			/*
+			const row = $(".row");
+
+			history.scrollRestoration = "manual";
+			document.addEventListener("wheel", (event) => {
+				const clientHeight = window.innerHeight;
+				const baseElementTop = row[row.length - 1].getBoundingClientRect().top;
+
+				if (event.deltaY > 0) {
+					console.log("휠다운");
+					wheelDown(row, baseElementTop, clientHeight);
+				}
+				if (event.deltaY < 0) {
+					console.log("휠업");
+					wheelUp(row, baseElementTop, clientHeight);
+				}
+			});
+
+			function wheelDown(row, baseElementTop, clientHeight) {
+			  for (let i = 1; i < row.length; i++) {
+			    if (baseElementTop === clientHeight * (row.length - i)) {
+			      scrollTo({
+			        top: clientHeight * i,
+			        behavior: "smooth",
+			      });
+			    }
+			  }
+			}
+			function wheelUp(row, baseElementTop, clientHeight) {
+			  for (let i = 0; i < row.length - 1; i++) {
+			    if (baseElementTop === clientHeight * i) {
+			      scrollTo({
+			        top: clientHeight * (row.length - 2 - i),
+			        behavior: "smooth",
+			      });
+			    }
+			  }
+			}
+			*/
+
+
+			
+			//스크롤
+			/*
+			window.addEventListener('scroll',e=>{
+				console.log('스크롤 감지');
+			});
+			window.__scrollPosition = document.documentElement.scrollTop || 0;
+			document.addEventListener('scroll', function() {
+				let _documentY = document.documentElement.scrollTop;
+				let _direction = _documentY - window.__scrollPosition >= 0 ?  'down': 'up';
+				console.log(_direction); // 콘솔창에 스크롤 방향을 출력
+				window.__scrollPosition = _documentY; // Update scrollY
+				console.log(_documentY);
+				//var location = document.querySelector(".row").offsetTop;
+				
+				
+				//하단 창 이동
+				if(_direction == 'down') {
+					if(_documentY < 2){
+						//window.scrollTo({top:location});
+						$("html, body").animate({scrollTop: $(".row").offset().top},400); // 선택한 위치로 이동. 두번째 인자는 0.4초를 의미한다.
+					}
+				}
+				else if(_direction == 'up') {
+					if(_documentY == document.documentElement.scrollTop){
+						//window.scrollTo({top:location - "70%"});
+						$("html, body").animate({scrollTop: $(".row").offset().top- "70%"},400); // 선택한 위치로 이동. 두번째 인자는 0.4초를 의미한다.
+					}
+				}
+			});
+			*/
+			
+		</script>
+		
+		
+	</body>
+</html>
